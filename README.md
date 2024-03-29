@@ -6,7 +6,7 @@ This repository contains the code and pretrained model for **"Focal Cortical Dys
 # **Use Terms**
 
 All content within this repository, including but not limited to source code, models, algorithms, data, and documentation, are subject to applicable intellectual property laws. The rights to this project are reserved by the project's author(s) or the rightful patent holder(s). This repository's contents, protected by patent, are solely for personal learning and research purposes, and are not for commercial use. Anyone utilize this project in your research, please cite our work as follows:
-> X. Zhang, Y. Zhang, C. Wang, et al., Focal Cortical Dysplasia Lesion Segmentation Using Multiscale Dual-Self-Attention Network.
+> X. Zhang, Y. Zhang, C. Wang, et al., MS-DSA-NET: Focal Cortical Dysplasia Lesion Segmentation Using Multiscale Dual-Self-Attention Network.
 
 # **Introduction**
 
