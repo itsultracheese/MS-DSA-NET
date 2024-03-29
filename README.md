@@ -1,4 +1,7 @@
 # MS-DSA-NET
+
+This repository contains the code for "Focal Cortical Dysplasia Lesion Segmentation Using Multiscale Dual-Self-Attention Network".
+
 Focal cortical dysplasia (FCD) is a predominant etiology of drug-resistant epilepsy,
 requiring surgical resection of the affected cortical regions for effective treatment.
 However, the accurate preoperative localization of FCD lesions in magnetic resonance
