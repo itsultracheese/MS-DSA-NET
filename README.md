@@ -27,7 +27,7 @@ tool for physicians, enabling rapid and accurate identification of FCD lesions.
 
 # **Model** 
 
-Figure 1 shows the flowchart of the proposed MS-DSA-NET. It employs the Encoder-Decoder architecture with four parallel DSA transformer pathways connect them. DSA is designed to overcome the limitation of transformer self-attention module, e.g., heavy computation complexity. We provide the trained models for FCD lesion segmentation using preprocessed T1+FLAIR images of UHB dataset [^1], which can be downloaded from BaiduYun(verification code: xxx).
+Figure 1 shows the flowchart of the proposed MS-DSA-NET. It employs the Encoder-Decoder architecture with four parallel DSA transformer pathways connect them. DSA is designed to overcome the limitation of transformer self-attention module, e.g., heavy computation complexity. We provide the trained models for FCD lesion segmentation using preprocessed T1+FLAIR images of UHB dataset[^1], which can be downloaded from BaiduYun(verification code: xxx).
 
 ![model architecture](https://github.com/zhangxd0530/MS-DSA-NET/blob/main/model.png "model architecture")
 
