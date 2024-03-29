@@ -13,7 +13,7 @@ attempts to automate the segmentation of FCD lesions have not yielded performanc
 levels sufficient for clinical adoption. In this study, we introduce a novel transformer-based model, MS-DSA-NET, designed for the end-to-end segmentation of FCD lesions
 from multi-channel MR images. The core innovation of our proposed model is the
 integration of a CNN encoder with a multiscale transformer to augment the feature
-representation of FCD lesions. A memory- and computation-efficient dual-self-attention
+representation of FCD lesions. A memory- and computation-efficient dual-self-attention (DSA) 
 module is utilized within the transformer pathway to discern interdependencies among
 feature positions and channels, thereby emphasizing areas and channels relevant to
 FCD lesions. We evaluated the performance of MS-DSA-NET through a series of
@@ -25,7 +25,16 @@ average Dice coefficient of 0.410(std:0.288), outperforming five established met
 Given these outcomes, MS-DSA-NET has the potential to serve as a valuable assistive
 tool for physicians, enabling rapid and accurate identification of FCD lesions.
 
+# **Model** 
+
+Figure 1 shows the flowchart of the proposed MS-DSA-NET. It employs the Encoder-Decoder architecture with four parallel DSA transformer pathways connect them. DSA is designed to overcome the limitation of transformer self-attention module, e.g., heavy computation complexity.  
+
+We provide the trained models for FCD lesion segmentation using T1+FLAIR images, which can be downloaded from BaiduYun(verification code: xxx).
+
 # **Requirements**
 
 - Python 3.8.0
 - Pytorch 1.12.0
+- MONAI 1.2.0
+
+
