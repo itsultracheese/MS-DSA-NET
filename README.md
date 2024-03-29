@@ -31,6 +31,8 @@ Figure 1 shows the flowchart of the proposed MS-DSA-NET. It employs the Encoder-
 
 We provide the trained models for FCD lesion segmentation using T1+FLAIR images, which can be downloaded from BaiduYun(verification code: xxx).
 
+![](./model.png)
+
 # **Requirements**
 
 - Python 3.8.0
