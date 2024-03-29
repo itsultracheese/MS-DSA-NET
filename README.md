@@ -38,4 +38,4 @@ Figure 1 shows the flowchart of the proposed MS-DSA-NET. It employs the Encoder-
 - MONAI 1.2.0
 
 # **References**
-[^1] F. Schuch, L. Walger, M. Schmitz, et al., An open presurgery mri dataset of people with epilepsy and focal cortical dysplasia type ii, Scientific Data 10 (1) (2023) 475.
+[^1]: F. Schuch, L. Walger, M. Schmitz, et al., An open presurgery mri dataset of people with epilepsy and focal cortical dysplasia type ii, Scientific Data 10 (1) (2023) 475.
