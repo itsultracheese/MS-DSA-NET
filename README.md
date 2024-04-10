@@ -26,7 +26,7 @@ Flowchart of the proposed MS-DSA-NET is displayed as following. It employs the E
 4. Prepare raw images files in the directory "inputs/raw". For each patient, a seperate folder named like "sub-00140" is created first; Then copy the raw T1w image (t1.nii.gz) and FLAIR image (flair.nii.gz) to it. We also prepared a sample test data (./inputs/raw/sub-00140) copied from UHB dataset for easy usage.
 5. Run seg_fcd_test.py using python to predict the FCD lesion maps. During runing, raw images are first preprocessed using FSL and the result images are saved in "./inputs/raw/fsl/sub-xxxxx“ (t1_reg.nii.gz, flair_reg.nii.gz along with other temporary files ). The result images (t1_reg.nii.gz, flair_reg.nii.gz) are loaded and fed into the proposed model to generate the lesion map, which would be saved in the "outputs/date/sub-xxxxx" folder with name "t1_reg_seg.nii.gz". We could display the results using MITK software as below:
 
-![prediction map]()
+![prediction map](https://github.com/zhangxd0530/MS-DSA-NET/blob/main/prediction.png)
 
 
 # **Requirements**
