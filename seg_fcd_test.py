@@ -34,7 +34,7 @@ params = dict()
 
 params['base_dir'] = './outputs'
 params['model_name'] = './pretrained/model.pth'
-params['data_dir'] = './inputs/fsl'
+params['data_dir'] = './inputs/'
 params['model_type'] = 'MS_DSA_NET' 
 params['sa_type'] = 'parallel'
 params['chans_in']   = 2
@@ -92,8 +92,8 @@ def test(model, params):
 
 
 def get_data(params):
-    t1_files = sorted( glob.glob(os.path.join(params["data_dir"], "*/t1_reg.nii.gz"),  recursive=True) )
-    fl_files = sorted( glob.glob(os.path.join(params["data_dir"], "*/flair_reg.nii.gz"), recursive=True) )
+    t1_files = sorted( glob.glob(os.path.join(params["data_dir"], "./*/t1_reg.nii.gz"),  recursive=True) )
+    fl_files = sorted( glob.glob(os.path.join(params["data_dir"], "./*/flair_reg.nii.gz"), recursive=True) )
 
     data_dict = []
     for t1_f, fl_f in zip(t1_files, fl_files):
@@ -108,7 +108,7 @@ def get_data(params):
 
 def main(params):
     
-    #params = preprocess_fsl(params)
+    params = preprocess_fsl(params)
 
     model, params = get_model(params)
 
