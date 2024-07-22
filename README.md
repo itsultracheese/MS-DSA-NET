@@ -21,7 +21,7 @@ Flowchart of the proposed MS-DSA-NET is displayed as following. It employs the E
 # **Usage**
 
 1. Clone the source code using git clone command to a local directory.
-2. Download the the pretrained weights file "model.pth" from [BaiduYun](https://pan.baidu.com/s/1jJWW6kdMxCp5wqV2oQRvmw) with verification code: uoq1.
+2. Download the the pretrained weights file "model.pth" from [BaiduYun](https://pan.baidu.com/s/1jJWW6kdMxCp5wqV2oQRvmw) with verification code: uoq1 or or [Google Drive](https://drive.google.com/drive/folders/1jB6829Yx5B2J3DNLhuquXqvHUaDDcB3Z).
 3. Create a folder named as "pretrained" in the root directory and move the downloaded "model.pth" to it.
 4. Prepare raw images files in the directory "inputs/raw". For each patient, a seperate folder named like "sub-00140" is created first; Then copy the raw T1w image (t1.nii.gz) and FLAIR image (flair.nii.gz) to it. We also prepared a sample test data (./inputs/raw/sub-00140) copied from UHB dataset for easy usage. The template file MNI152_T1_1mm.nii.gz is also uploaded and the users should download it to the folder "./inputs" for usage of following preprocessing. 
 5. Run seg_fcd_test.py using python to predict the FCD lesion maps. During runing, raw images are first preprocessed using FSL and the result images are saved in "./inputs/fsl/sub-xxxxx“ (t1_reg.nii.gz, flair_reg.nii.gz along with other temporary files ). The result images (t1_reg.nii.gz, flair_reg.nii.gz) are loaded and fed into the proposed model to generate the lesion map, which would be saved in the "outputs/date/sub-xxxxx" folder with name "t1_reg_seg.nii.gz". We could display the results using MITK software as below (prediction map (red) and ground truth (yellow) are blended for rendering).
