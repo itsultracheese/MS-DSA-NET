@@ -8,14 +8,9 @@ import numpy as np
 import ants
 import nibabel as nib
 import SimpleITK as sitk
-# use  "source ~/.bashrc " to activate fsl
-# conda install fsleyes
-# export PATH=$PATH:/home/zhangxd/anaconda3/envs/py380/bin/
 mni152_path = './inputs/MNI152_T1_1mm.nii.gz'
 
 def preprocess_fsl(params):
-    #fsl_anat -i /home/zhangxd/Projects/Data/brain/FCD2-public/data/sub-00146/anat/sub-00075_acq-iso08_T1w.nii.gz
-    #  -o /home/zhangxd/Projects/Data/brain/FCD2-public/prep-ants/fcd/sub-00146 --nononlinreg
     # robunstfov -i xx -r xx (output) -m xx
     # 1) reorient2std; 2) robust fov; 3) register flair to t1; 4) register all to mni152
     data_dir = os.path.join(params['data_dir'], 'raw')
