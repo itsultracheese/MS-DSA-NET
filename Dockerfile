@@ -41,5 +41,5 @@ RUN rm -rf inputs/fsl/
 # RUN fslorient
 
 # Command to run your application
-# CMD uvicorn app:app --host 127.0.0.1 --port 1239
-CMD ["python3", "seg_fcd_test.py"]
+CMD uvicorn app:app --host 127.0.0.1 --port 1239
+# CMD ["python3", "seg_fcd_test.py"]
