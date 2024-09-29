@@ -1,0 +1,10 @@
+monai==1.2.0
+antspyx
+nibabel
+SimpleITK
+tqdm
+numpy
+thop
+uvicorn
+fastapi
+python-multipart
