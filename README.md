@@ -2,6 +2,14 @@
 
 This repository contains the code and pretrained model for **"Focal Cortical Dysplasia Lesion Segmentation Using Multiscale Transformer".**
 
+# **Use as backend**
+```
+./build_image.sh
+./run_container.sh
+```
+
+The application waits for the files input as POST request to `/upload_files`. First file is for T1 mode, second is for FLAIR mode.
+
 
 # **Use Terms**
 
